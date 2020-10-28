@@ -1,0 +1,14 @@
+{% extends 'User.html' %}
+{% block content %}
+    <div id="login_panel">
+        {% include 'User/credentials.html' %}
+    </div>
+    <div id="register_redirection">
+        <a>If you already have an account...</a>
+        <a href="{{ url_for("user_bp.login") }}">
+            <div id="redirection_button"><h3>Login</h3></div>
+        </a>
+
+    </div>
+
+{% endblock %}

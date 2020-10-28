@@ -1,0 +1,34 @@
+{% extends'Main.html' %}
+{# a page of people: Actor or Director #}
+{# passing parameter: people #}
+
+{% block style %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/block.css') }}"/>
+{% endblock %}
+
+{% block content %}
+    <div id="people_img">
+        <img src="{{ url_for('static',filename='img/rsc/'+people.image) }}" alt="image not available">
+    </div>
+    <div id="people_info">
+        <h1 style="padding-top: 15px;">{{ people.name }}</h1>
+        {% for occu in people.type %}
+            <a>
+                <div class="tag">{{ occu }}</div>
+            </a>
+        {% endfor %}
+    </div>
+    <div class="one_letter_block"><h1>Known for </h1></div>
+    {% if people.directed|length != 0 %}
+        <div class="one_letter_block"><h2>Directed</h2></div>
+        {% for item in people.directed %}
+            {% include 'Block.html' %}
+        {% endfor %}
+    {% endif %}
+    {% if people.participated|length != 0 %}
+        <div class="one_letter_block"><h2>Participated</h2></div>
+        {% for item in people.participated %}
+            {% include 'Block.html' %}
+        {% endfor %}
+    {% endif %}
+{% endblock %}

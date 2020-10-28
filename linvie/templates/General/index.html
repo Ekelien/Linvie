@@ -1,0 +1,34 @@
+{% extends'Main.html' %}
+{# a page of people: Actor or Director #}
+{# passing parameter: people #}
+
+{% block style %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/block.css') }}"/>
+{% endblock %}
+{% block guide_index %}
+    {% for letter in alphabet %}
+        {% if dictionary[letter]|length != 0 %}
+            <a href="{{ " #title-"+letter }}">
+                <div class="guide_index">{{ letter }}</div>
+            </a>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+{% block content %}
+    {% for letter in alphabet %}
+        <div id="{{ "letter-"+letter }}">
+
+
+            {% if dictionary[letter]|length != 0 %}
+                <div id="{{ "title-"+letter }}" class="general_title_block">
+                    <h2>{{ letter }}</h2>
+                </div>
+            {% endif %}
+
+
+            {% for item in dictionary[letter] %}
+                {% include 'Block.html' %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endblock %}

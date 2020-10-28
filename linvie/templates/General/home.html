@@ -1,0 +1,15 @@
+{% extends 'Main.html' %}
+
+
+{% block content %}
+    <div class="general_title_block"><h1>Editor's Pick</h1></div>
+    {% for item in MovieList1 %}
+        {% include 'Block.html' %}
+    {% endfor %}
+    <div class="general_title_block"><h1>Recommended for You</h1></div>
+    {% for item in MovieList2 %}
+        {% include 'Block.html' %}
+    {% endfor %}
+
+    {#<h1>Editor's Pick</h1>#}
+{% endblock %}

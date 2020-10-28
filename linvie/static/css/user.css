@@ -1,0 +1,35 @@
+#user_content {
+    padding-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+}
+
+.formwrapper {
+    width: 300px;
+    border-right: 1px solid grey;
+    float: left;
+    padding-right: 20px;
+}
+
+.formwrapper div {
+    margin-bottom: 10px;
+}
+
+#register_redirection {
+    text-align: center;
+    width: 600px;
+}
+
+.text_entry {
+    height: 32px;
+    border: 1px solid grey;
+    float: right;
+    width: 200px;
+}
+
+.form_label {
+    line-height: 32px;
+    float: left;
+    width: 98px;
+}

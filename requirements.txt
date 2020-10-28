@@ -1,0 +1,9 @@
+werkzeug
+sqlalchemy
+wtforms
+flask
+better-profanity==0.6.1
+flask-wtf==0.14.3
+password-validator==1.0
+pytest==5.4.3
+python-dotenv==0.13.0

@@ -1,0 +1,27 @@
+{% extends 'Main.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/block.css') }}"/>
+{% endblock %}
+
+{% block content %}
+    {% if match|length != 0 %}
+        {% for item in match %}
+            {% include 'Block.html' %}
+        {% endfor %}
+    {% endif %}
+
+    {% if similar|length != 0 %}
+        <div class="general_title_block"><h1>You may looking for</h1></div>
+        {% for item in similar %}
+            {% include 'Block.html' %}
+        {% endfor %}
+    {% endif %}
+
+    {% if match|length == 0 and similar|length == 0 %}
+        <div class="general_title_block"><a>No matching result.</a></div>
+
+    {% endif %}
+
+
+{% endblock %}

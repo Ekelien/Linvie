@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+body {
+    background: url("../img/nebula.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+#Title {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    font-size: 120px;
+    text-align: center;
+    margin-top: 18%;
+    overflow: auto;
+
+
+    -webkit-animation-name: ChangeOpacity;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+}
+
+#Title a {
+    color: white;
+}
+
+@-webkit-keyframes ChangeOpacity {
+    0% {
+        opacity: 50%
+    }
+    50% {
+        opacity: 100%
+    }
+    100% {
+        opacity: 50%
+    }
+}
+
+@-webkit-keyframes ComeOut {
+    0% {
+        opacity: 0%
+    }
+    100% {
+        opacity: 30%
+    }
+
+}
+
+#enter_button {
+    border: 1px solid white;
+    margin-right: 40%;
+    margin-left: 40%;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    margin-top: 70px;
+    opacity: 30%;
+    background: rgba(255, 255, 255, 0.31);
+
+    -webkit-animation-name: ComeOut;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 6s;
+    transition: all 1s;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#enter_button:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+
+}

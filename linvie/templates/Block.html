@@ -1,0 +1,30 @@
+<div class="standard_block">
+    <div class="standard_block_tag_container">
+        {% for tag in item.type %}
+            <a>
+                <div class="tag">{{ tag }}</div>
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="standard_block_img_container">
+        <img src="{{ url_for('static',filename='img/rsc/'+item.image) }}" alt="Image not available.">
+
+
+    </div>
+
+    <div class="standard_block_title_container">
+        <a href="{{ '/'+item.href+'?id='+item.ID|string }}"><h3>{{ item.name }}</h3></a>
+
+    </div>
+
+    <div class="standard_block_tag_container">
+        {% for gen in item.genres %}
+            <a href="{{ '/genre'+'?id='+gen.ID|string }}">
+                <div class="tag">{{ gen.name }}</div>
+            </a>
+        {% endfor %}
+    </div>
+
+
+</div>

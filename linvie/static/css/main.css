@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+
+    background: url("../img/nebula.png") no-repeat center fixed;
+    background-size: cover;
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+#top_master_container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: fixed;
+    position: -ms-device-fixed;
+    width: 100%;
+    height: 60px;
+    background: #0b0017;
+}
+
+#top_master_container img {
+    max-height: 100%;
+    max-width: 100%;
+    height: 55px;
+}
+
+#top_master_container div {
+
+}
+
+#logo_image {
+    float: left;
+    overflow: auto;
+    margin: 0 15px;
+    height: 100%;
+}
+
+#search_panel {
+    float: left;
+    overflow: auto;
+    width: 70%;
+    height: 40px;
+    margin-left: 7%;
+    margin-top: 15px;
+}
+
+#search_input {
+    width: 63%;
+    height: 100%;
+    float: left;
+    overflow: auto;
+    border: 1px solid rgb(220, 220, 235);
+}
+
+#search_submit {
+    width: 18%;
+    height: 100%;
+    float: left;
+    overflow: auto;
+    border: 1px solid rgb(220, 220, 235);
+}
+
+#advance_search {
+    width: 18%;
+    height: 100%;
+    float: right;
+    overflow: auto;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+#search_panel input {
+    height: 30px;
+    width: 100%;
+
+}
+
+#search_panel input:focus {
+    border: none;
+}
+
+#user_panel {
+    float: right;
+    margin-right: 10px;
+    height: 100%;
+}
+
+#left_guide_container {
+    margin-top: 60px;
+    height: 100%;
+    width: 15%;
+    float: left;
+    overflow: auto;
+    position: fixed;
+}
+
+#left_guide_container .guide_button {
+    width: 100%;
+    line-height: 50px;
+    transition: all 0.6s;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.guide_button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#guide_index_container {
+    margin-top: 60px;
+    margin-left: 15%;
+    height: 100%;
+    width: 2%;
+    float: left;
+    overflow: visible;
+    position: fixed;
+}
+
+#content_container {
+    padding-top: 60px;
+    padding-left: 17%;
+}
+
+#people_img {
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    margin: 15px;
+    float: left;
+}
+
+
+.guide_index {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid gainsboro;
+    text-align: center;
+    border-radius: 3px;
+    padding: 1px;
+}
+
+/* Tooltip text */
+.guide_index .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    top: -5px;
+    left: 105%;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.guide_index:hover .tooltiptext {
+    visibility: visible;
+}
+
+.one_letter_block {
+    width: 100%;
+    border-top: 60px;
+    float: left;
+}
+
+.general_title_block {
+    width: 100%;
+    margin-top: 60px;
+    float: left;
+    margin-left: 15px;
+}
+
+.small_title {
+    width: 90%;
+    float: left;
+    margin-left: 10px;
+}
+
+#comment_container {
+    width: 720px;
+}
+
+input[type='text'],
+select {
+    width: 99%;
+    height: 99%;
+    box-sizing: border-box;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input[type='text'], select a {
+    color: white;
+}
+
+input[type='password'],
+select {
+    width: 99%;
+    height: 99%;
+    box-sizing: border-box;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+input[type='submit'] {
+    width: 99%;
+    height: 99%;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 13px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 1s;
+}
+
+input[type='submit']:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.comment_line {
+    width: 100%;
+    text-align: left;
+}
+
+.comment_info_line {
+    width: 100%;
+    text-align: right;
+}
+
+#comment, #comment_container, #intro {
+    width: 710px;
+    overflow: auto;
+}
