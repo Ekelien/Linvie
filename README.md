@@ -41,11 +41,13 @@ The *Linvie/.env* file contains variable settings. They are set with appropriate
 
 ## Testing
 
-Because of the complicated PATH issue, you are ***not*** able to run test via commend
+You can directly type
 ````shell
 $  python -m pytest
 ```` 
-**Alternatively**, you can then run tests from within PyCharm Configuration `pytest in tests`
+Or run tests from PyCharm Configuration `pytest in tests`.
+* You do ***NOT*** need to modify the test data file path.
+* All test case that add object in to database will delete it after testing.
 
 
 

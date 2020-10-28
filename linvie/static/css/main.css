@@ -136,7 +136,7 @@ a, h1, h2, h3, h4, h5, h6 {
 #people_img {
     width: 400px;
     height: 400px;
-    background-color: aliceblue;
+    background-color: rgba(0,0,0,0.3);
     margin: 15px;
     float: left;
 }
